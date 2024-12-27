@@ -4,9 +4,7 @@ function Matriz()
 {
     const prueba: number[][] = 
     [
-        [1,2,3],
-        [1,2,3],
-        [1,2,3]
+        [1]
     ]
 
     if(verificarMatrizMatematica(prueba))
