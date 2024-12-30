@@ -4,7 +4,7 @@ export function applyActionOnKeyValueOnObject(obj: KeyValueType, action: actionF
 {
   for(const key in obj) 
   {
-      if ("object" === typeof obj[key] && null !== obj[key]) 
+      if ("object" === typeof obj[key] && null !== obj[key]) //esta condicion es clave, porque si obj[key] no existe, va a devolver NULL
       {
         applyActionOnKeyValueOnObject(obj[key], action, nestingDepth + 1);
       } 
